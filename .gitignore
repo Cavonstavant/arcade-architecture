@@ -31,6 +31,10 @@
 *.out
 *.app
 
-#editors
+# Editors
 .idea/
 .vscode/
+
+# CMake related files
+cmake-build-debug/
+build/

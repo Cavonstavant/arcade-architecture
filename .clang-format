@@ -38,7 +38,7 @@ CompactNamespaces: false
 ContinuationIndentWidth: 8
 IndentAccessModifiers: true
 IndentCaseLabels: true
-IndentPPDirectives: None
+IndentPPDirectives: BeforeHash
 IndentWidth: 4
 KeepEmptyLinesAtTheStartOfBlocks: true
 MaxEmptyLinesToKeep: 2

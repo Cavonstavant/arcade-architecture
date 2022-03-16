@@ -6,7 +6,10 @@ set(TARGET_EXEC_NAME arcade)
 
 set(SRC
     ${INCLUDE_ROOT}/core.hpp
+    ${INCLUDE_ROOT}/core.cpp
 )
+
+set_target_properties(${TARGET_LIBNAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 add_library(${TARGET_LIB_NAME} ${SRC})
 

@@ -38,3 +38,9 @@
 # CMake related files
 cmake-build-debug/
 build/
+
+cmake_install.cmake
+Makefile
+CMakeFiles/
+CMakeCache.txt
+arcade

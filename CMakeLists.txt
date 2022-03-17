@@ -8,5 +8,5 @@ add_compile_options(
         "-Wall" "-Wextra" "-Wshadow" "-pedantic" "-Wpointer-arith"
 )
 
-add_subdirectory(lib)
-add_subdirectory(src)
+add_subdirectory(Lib)
+add_subdirectory(Src)

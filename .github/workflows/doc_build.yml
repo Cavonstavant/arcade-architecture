@@ -2,7 +2,7 @@ name: Doxygen GH Pages Deployment
 
 on:
   push:
-    branches: [master]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -27,7 +27,7 @@ jobs:
     - name: Deploy documentation
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ inputs.github_token }}
         repo: ${{ github.repository }}
         directory: doc/generated/html
         message: "Update generated documentation"

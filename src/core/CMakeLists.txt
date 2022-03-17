@@ -7,6 +7,8 @@ set(TARGET_EXEC_NAME arcade)
 set(SRC
     ${INCLUDE_ROOT}/core.hpp
     ${INCLUDE_ROOT}/core.cpp
+    ${INCLUDE_ROOT}/AEntity.hpp
+    ${INCLUDE_ROOT}/AEntity.cpp
 )
 
 set_target_properties(${TARGET_LIBNAME} PROPERTIES LINKER_LANGUAGE CXX)

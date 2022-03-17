@@ -22,12 +22,12 @@ jobs:
 
     - name: Add .nojekyll
       run: |
-        touch ${{github.workspace}}/doc/html/.nojekyll
+        touch doc/.nojekyll
 
     - name: Deploy documentation
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         github_token: ${{ inputs.github_token }}
-        folder: doc/html
+        folder: doc/
         message: "Update generated documentation"
         branch: gh-pages

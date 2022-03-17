@@ -11,7 +11,7 @@
  * The constructor for the AEntity class takes two parameters, a type and an asset path. The type is
  * used to determine what kind of entity this is. The asset path is used to determine what texture to
  * load for this entity
- * 
+ *
  * @param type The type of entity.
  * @param assetPath The path to the asset file.
  */
@@ -32,7 +32,7 @@ AEntity::~AEntity()
 
 /**
  * Returns the path to the asset file
- * 
+ *
  * @return The asset path.
  */
 std::string AEntity::getAssetPath() const
@@ -42,7 +42,7 @@ std::string AEntity::getAssetPath() const
 
 /**
  * Set the asset path of this entity.
- * 
+ *
  * @param assetPath The path to the asset file.
  */
 void AEntity::setAssetPath(const std::string &assetPath)
@@ -52,7 +52,7 @@ void AEntity::setAssetPath(const std::string &assetPath)
 
 /**
  * Returns the type of the entity
- * 
+ *
  * @return The type of the entity.
  */
 IEntity::EntityType AEntity::getType() const
@@ -62,7 +62,7 @@ IEntity::EntityType AEntity::getType() const
 
 /**
  * Set the type of the entity.
- * 
+ *
  * @param type The type of entity.
  */
 void AEntity::setType(IEntity::EntityType type)
@@ -72,7 +72,7 @@ void AEntity::setType(IEntity::EntityType type)
 
 /**
  * Returns the position of the entity
- * 
+ *
  * @return The position of the entity.
  */
 std::pair<int, int> AEntity::getPos() const
@@ -82,7 +82,7 @@ std::pair<int, int> AEntity::getPos() const
 
 /**
  * Set the position of the entity to pos.
- * 
+ *
  * @param pos The position of the entity.
  */
 void AEntity::setPos(std::pair<int, int> pos)
@@ -92,7 +92,7 @@ void AEntity::setPos(std::pair<int, int> pos)
 
 /**
  * Returns the size of the entity
- * 
+ *
  * @return The size of the entity.
  */
 std::pair<int, int> AEntity::getSize() const
@@ -102,7 +102,7 @@ std::pair<int, int> AEntity::getSize() const
 
 /**
  * Set the size of the entity
- * 
+ *
  * @param size The size of the entity.
  */
 void AEntity::setSize(std::pair<int, int> size)

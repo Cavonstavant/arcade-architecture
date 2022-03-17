@@ -44,3 +44,5 @@ Makefile
 CMakeFiles/
 CMakeCache.txt
 arcade
+
+doc/html

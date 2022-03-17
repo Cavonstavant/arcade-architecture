@@ -7,104 +7,57 @@
 
 #include "AEntity.hpp"
 
-/**
- * The constructor for the AEntity class takes two parameters, a type and an asset path. The type is
- * used to determine what kind of entity this is. The asset path is used to determine what texture to
- * load for this entity
- *
- * @param type The type of entity.
- * @param assetPath The path to the asset file.
- */
-AEntity::AEntity(EntityType type, const std::string &assetPath)
+/// @brief Constructor
+/// @param type The type of entity.
+AEntity::AEntity(EntityType type)
 {
-    _assetPath = assetPath;
     _type = type;
     _pos = std::make_pair(0, 0);
     _size = std::make_pair(0, 0);
 }
 
-/**
- * The destructor is called when the object is destroyed
- */
+/// @brief Destructor
 AEntity::~AEntity()
 {
 }
 
-/**
- * Returns the path to the asset file
- *
- * @return The asset path.
- */
-std::string AEntity::getAssetPath() const
-{
-    return _assetPath;
-}
-
-/**
- * Set the asset path of this entity.
- *
- * @param assetPath The path to the asset file.
- */
-void AEntity::setAssetPath(const std::string &assetPath)
-{
-    _assetPath = assetPath;
-}
-
-/**
- * Returns the type of the entity
- *
- * @return The type of the entity.
- */
+/// @brief Get the entity type
+/// @return the EntityType
 IEntity::EntityType AEntity::getType() const
 {
     return _type;
 }
 
-/**
- * Set the type of the entity.
- *
- * @param type The type of entity.
- */
+/// @brief Set the entity type
+/// @param type the EntityType
 void AEntity::setType(IEntity::EntityType type)
 {
     _type = type;
 }
 
-/**
- * Returns the position of the entity
- *
- * @return The position of the entity.
- */
+/// @brief Get the entity position
+/// @return the std::pair<int, int> position
 std::pair<int, int> AEntity::getPos() const
 {
     return _pos;
 }
 
-/**
- * Set the position of the entity to pos.
- *
- * @param pos The position of the entity.
- */
+/// @brief Set the entity position
+/// @param pos the std::pair<int, int> position
 void AEntity::setPos(std::pair<int, int> pos)
 {
     _pos = pos;
 }
 
-/**
- * Returns the size of the entity
- *
- * @return The size of the entity.
- */
+/// @brief Get the entity size
+/// @return the std::pair<int, int> size
 std::pair<int, int> AEntity::getSize() const
 {
     return _size;
 }
 
-/**
- * Set the size of the entity
- *
- * @param size The size of the entity.
- */
+/// @brief Set the entity size
+/// @param size the std::pair<int, int> size
 void AEntity::setSize(std::pair<int, int> size)
 {
     _size = size;

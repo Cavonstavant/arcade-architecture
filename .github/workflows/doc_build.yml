@@ -22,7 +22,7 @@ jobs:
 
     - name: Add .nojekyll
       run: |
-        touch doc/build/html/.nojekyll
+        touch ${{github.workspace}}/doc/build/html/.nojekyll
 
     - name: Deploy documentation
       uses: JamesIves/github-pages-deploy-action@v4.2.5

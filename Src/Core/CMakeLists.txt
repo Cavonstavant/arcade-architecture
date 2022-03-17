@@ -1,12 +1,12 @@
-set(INCLUDE_ROOT ${PROJECT_SOURCE_DIR}/src/core)
-set(SOURCE_ROOT ${PROJECT_SOURCE_DIR}/src/core)
+set(INCLUDE_ROOT ${PROJECT_SOURCE_DIR}/Src/Core)
+set(SOURCE_ROOT ${PROJECT_SOURCE_DIR}/Src/Core)
 
 set(TARGET_LIB_NAME libarcade_core)
 set(TARGET_EXEC_NAME arcade)
 
 set(SRC
-    ${INCLUDE_ROOT}/core.hpp
-    ${INCLUDE_ROOT}/core.cpp
+    ${INCLUDE_ROOT}/Core.hpp
+    ${INCLUDE_ROOT}/Core.cpp
     ${INCLUDE_ROOT}/AEntity.hpp
     ${INCLUDE_ROOT}/AEntity.cpp
 )
@@ -17,7 +17,7 @@ add_library(${TARGET_LIB_NAME} ${SRC})
 
 target_link_libraries(${TARGET_LIB_NAME} PRIVATE ArcadeCommonInterface dl)
 
-add_executable(${TARGET_EXEC_NAME} ${SOURCE_ROOT}/entryPoint.cpp)
+add_executable(${TARGET_EXEC_NAME} ${SOURCE_ROOT}/EntryPoint.cpp)
 
 target_link_libraries(${TARGET_EXEC_NAME} PRIVATE ${TARGET_LIB_NAME})
 

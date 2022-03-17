@@ -8,7 +8,7 @@
 #ifndef AENTITY_HPP_
 #define AENTITY_HPP_
 
-#include "../commonInterface/include/IEntity.hpp"
+#include "../CommonInterface/Include/IEntity.hpp"
 
 class AEntity : public IEntity {
     public:

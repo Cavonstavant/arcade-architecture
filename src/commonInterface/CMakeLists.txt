@@ -11,6 +11,7 @@ set(SRC
     ${INCLUDE_ROOT}/ICore.hpp
     ${INCLUDE_ROOT}/IGame.hpp
     ${INCLUDE_ROOT}/IDisplay.hpp
+    ${INCLUDE_ROOT}/IEntity.hpp
 )
 
 add_library(${PROJECT_NAME} INTERFACE ${SRC})

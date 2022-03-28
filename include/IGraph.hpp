@@ -11,6 +11,7 @@
 #include "IEntity.hpp"
 #include <string>
 
+/// \brief represents a generic graphical library
 class IGraph {
 
 public:

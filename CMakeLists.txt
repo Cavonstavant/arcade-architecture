@@ -12,6 +12,7 @@ set(SRC
     ${INCLUDE_ROOT}/IGraph.hpp
     ${INCLUDE_ROOT}/IEntity.hpp
     ${INCLUDE_ROOT}/IColor.hpp
+    ${INCLUDE_ROOT}/Event.hpp
 )
 
 add_library(${PROJECT_NAME} INTERFACE ${SRC})

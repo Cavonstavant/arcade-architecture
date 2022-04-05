@@ -42,6 +42,9 @@ class IGame {
         /// \return the game's status
         virtual GameState getState() const = 0;
 
+        /// \brief Get the game's name
+        virtual std::string getName() const = 0;
+
         /// \brief starts the game
         virtual void start() = 0;
 };

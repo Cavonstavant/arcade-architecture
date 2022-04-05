@@ -60,7 +60,9 @@ class IGraph {
         /// \brief display the window
         /// \return true if the window is successfully displayed
         virtual bool displayWindow() = 0;
-
+        
+        /// \brief get the graphical lib
+        virtual std::string getName() const = 0;
     protected:
     private:
 };

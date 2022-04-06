@@ -39,12 +39,13 @@ public:
   /// on the window. After all destroy the Text \param pos the std::pair<int,
   /// int> position \param content the std::string content \return true if the
   /// text is successfully draw
-  virtual bool drawText(std::pair<int, int> pos, const std::string &content) = 0;
+  virtual bool drawText(std::pair<int, int> pos,
+                        const std::string &content) = 0;
 
   /// \brief Create an Entity, set position, then display it on the window.
   /// After all destroy the Entity \param IEntity representing the entity with
-  /// its own properties \param std::pair<int, int> pos to know where to display the
-  /// entity in the window \return true if the entity is successfully draw
+  /// its own properties \param std::pair<int, int> pos to know where to display
+  /// the entity in the window \return true if the entity is successfully draw
   virtual bool drawEntity(IEntity &entity, std::pair<int, int> pos) = 0;
 
   /// \brief clear the window
